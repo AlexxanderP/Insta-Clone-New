@@ -20,7 +20,6 @@ class App extends Component {
 
         <SearchBar />
         {this.state.posts.map((post, index) => <PostContainer key={index} post={post}/>)}
-        <CommentSection />
       
       </div>
     );
@@ -45,3 +44,7 @@ App.propTypes = {
 }
 
 export default App;
+
+//name = 'Alexander'
+// localStorage.setItem('username', name)
+//localStorage.getItem('username')
