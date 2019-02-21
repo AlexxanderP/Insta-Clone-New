@@ -1,5 +1,6 @@
 import React from 'react';
-import Comment from "./Comment";1
+import Comment from "./Comment";
+import PropTypes from 'prop-types';
 
 
 
@@ -21,4 +22,13 @@ class CommentSection extends React.Component {
     }
 }
 
+CommentSection.propTypes = {
+    dummyData: PropTypes.arrayOf (
+        PropTypes.shape({
+        comments: PropTypes.arrayOf(
+            PropTypes.shape({
+                username: PropTypes.string.isRequired,
+                text: PropTypes.string
+    })
+)}))};
 export default CommentSection;

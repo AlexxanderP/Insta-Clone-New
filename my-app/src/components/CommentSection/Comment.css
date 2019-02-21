@@ -1,0 +1,9 @@
+.comment {
+    display: flex;
+    margin-bottom: 10px;
+    text-align: start;
+
+};
+span{
+    margin-left: 5px;
+}
