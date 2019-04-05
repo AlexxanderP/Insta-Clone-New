@@ -5,7 +5,6 @@ import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 import './App.css';
 import PropTypes from 'prop-types';
-import CommentSection from './components/CommentSection/CommentSection';
 
 class App extends Component {
   constructor() {
@@ -20,7 +19,6 @@ class App extends Component {
 
         <SearchBar />
         {this.state.posts.map((post, index) => <PostContainer key={index} post={post}/>)}
-        <CommentSection />
       
       </div>
     );
@@ -45,3 +43,7 @@ App.propTypes = {
 }
 
 export default App;
+
+//name = 'Alexander'
+// localStorage.setItem('username', name)
+//localStorage.getItem('username')
